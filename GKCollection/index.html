@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GKCollection | Sevgiyle Dokunan El Emeği Tasarımlar</title>
+    <!-- Google Fonts: Lora (Başlıklar) ve Nunito (Metinler) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Dosyamızı Bağlıyoruz -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ÜST MENÜ (Header) -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                GKCollection
+                <span>El Emeği Butik</span>
+            </a>
+            
+            <!-- Mobil Menü Butonu -->
+            <button class="nav-toggle" aria-label="Menüyü Aç/Kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="#ana-sayfa">Ana Sayfa</a></li>
+                    <li><a href="#koleksiyon">Koleksiyon</a></li>
+                    <li><a href="#hikayemiz">Hikayemiz</a></li>
+                    <li><a href="#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. KARŞILAMA ALANI (Hero Section) -->
+    <section id="ana-sayfa" class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle-badge">✨ %100 El Emeği & Sipariş Üzerine</span>
+            <h1>Sevgiyle Dokunan Detaylar</h1>
+            <p>Her bir ilmeğinde özen ve emek barındıran, siparişinize özel hazırlanan çanta, cüzdan ve dekoratif tasarımlar.</p>
+            <div class="hero-actions">
+                <a href="#koleksiyon" class="btn btn-primary">Koleksiyonu Keşfet</a>
+                <a href="#hikayemiz" class="btn btn-secondary">Hikayemizi Oku</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. KOLEKSİYON ALANI (Kategoriler & Ürünler) -->
+    <section id="koleksiyon" class="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Özel Üretim</span>
+                <h2>Koleksiyon</h2>
+                <p>Her ürün sipariş üzerine yapılır, %100 kendi ellerimle dokunur. İlgilendiğiniz ürüne tıklayarak detaylı renk seçeneklerini ve özelliklerini inceleyebilirsiniz.</p>
+            </div>
+
+            <!-- Kategori Filtre Butonları -->
+            <div class="collection-filters">
+                <button type="button" class="filter-btn active" data-category="all">
+                    Tüm Ürünler
+                </button>
+                <button type="button" class="filter-btn" data-category="cantalar">
+                    👜 Çantalar
+                </button>
+                <button type="button" class="filter-btn" data-category="cuzdanlar">
+                    👛 Cüzdanlar
+                </button>
+                <button type="button" class="filter-btn" data-category="diger">
+                    ✨ Diğer Tasarımlar
+                </button>
+            </div>
+
+            <!-- Dinamik Ürün Listesi (JavaScript ile doldurulur) -->
+            <div id="product-grid" class="grid-container">
+                <!-- Ürün kartları main.js tarafından buraya yerleştirilir -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. HİKAYEMİZ ALANI (Story Section) -->
+    <section id="hikayemiz" class="story-section">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text">
+                    <span class="section-tag">Nasıl Üretiyorum?</span>
+                    <h2>Her İlmekte Bir Hikaye</h2>
+                    <p>GKCollection, seri üretimin soğukluğuna inat; dokunarak, hissederek ve sabırla üretilen tasarımların hikayesidir. Doğal pamuk, jüt ve dayanıklı iplerle ördüğüm her bir parça sadece bir aksesuar değil, size özel üretilmiş bir sanat eseridir.</p>
+                    
+                    <div class="story-highlight-quote">
+                        "Her ürün sipariş üzerine yapılır, %100 kendi ellerimle yapıyorum. Farklı renk seçenekleri ve kişisel isteklerinizle tasarımı tamamen size özel hale getiriyoruz."
+                    </div>
+
+                    <div class="story-features">
+                        <div class="story-feature-item">
+                            <strong>🌱 Doğal & Dayanıklı</strong>
+                            <span>Kaliteli pamuk ve jüt iplikler kullanılır.</span>
+                        </div>
+                        <div class="story-feature-item">
+                            <strong>🎨 Sınırsız Renk Seçeneği</strong>
+                            <span>Beğendiğiniz model istediğiniz renkte üretilir.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-visual-box">
+                    <div class="story-artisan-icon">🧶</div>
+                    <h3>Kişiye Özel Butik Atölye</h3>
+                    <p>Fabrikasyon değil, siparişiniz onaylandıktan sonra sıfırdan sizin için örülmeye başlanır. 3-5 iş günü içerisinde sevgiyle paketlenerek size ulaştırılır.</p>
+                    <a href="#koleksiyon" class="btn btn-primary" style="margin-top: 20px;">
+                        Kendi Parçanı Seç
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. ALT BİLGİ & İLETİŞİM (Footer) -->
+    <footer id="iletisim">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: #FAF6EE; margin-bottom: 12px;">GKCollection</div>
+                    <p>Sevgiyle dokunan el emeği çantalar, cüzdanlar ve yaşam alanlarınıza sıcaklık katan özel aksesuarlar.</p>
+                    <p style="margin-top: 10px; font-size: 0.85rem; color: #8A9A86;">
+                        ✓ %100 El Yapımı &nbsp; | &nbsp; ✓ Kişiye Özel Üretim
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Hızlı Menü</h3>
+                    <ul class="footer-links">
+                        <li><a href="#ana-sayfa">Ana Sayfa</a></li>
+                        <li><a href="#koleksiyon">Koleksiyon</a></li>
+                        <li><a href="#hikayemiz">Hikayemiz</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>İletişim & Sipariş</h3>
+                    <p style="margin-bottom: 15px;">Özel sipariş talepleriniz, renk danışmanlığı ve sorularınız için bize ulaşabilirsiniz:</p>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span>📧 E-posta:</span>
+                            <a href="mailto:merhaba@gkcollection.com">merhaba@gkcollection.com</a>
+                        </li>
+                        <li>
+                            <span>📸 Instagram:</span>
+                            <a href="https://instagram.com" target="_blank" rel="noopener">@gkcollection_</a>
+                        </li>
+                        <li>
+                            <span>💬 WhatsApp:</span>
+                            <a href="https://wa.me/" target="_blank" rel="noopener">Sipariş Hattı</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 GKCollection. Tüm hakları saklıdır.</p>
+                <p>Her ürün sevgi ve özenle elde yapılmıştır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Dosyaları -->
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

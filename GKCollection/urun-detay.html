@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürün Detayı | GKCollection</title>
+    <!-- Google Fonts: Lora (Başlıklar) ve Nunito (Metinler) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Dosyamızı Bağlıyoruz -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. ÜST MENÜ (Header) -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                GKCollection
+                <span>El Emeği Butik</span>
+            </a>
+            
+            <!-- Mobil Menü Butonu -->
+            <button class="nav-toggle" aria-label="Menüyü Aç/Kapat">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html#ana-sayfa">Ana Sayfa</a></li>
+                    <li><a href="index.html#koleksiyon">Koleksiyon</a></li>
+                    <li><a href="index.html#hikayemiz">Hikayemiz</a></li>
+                    <li><a href="index.html#iletisim">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 2. ÜRÜN DETAY SAYFASI GÖVDESİ -->
+    <main class="product-detail-page">
+        <div class="container">
+            
+            <!-- Sayfa Yolu (Breadcrumbs) -->
+            <nav class="breadcrumb-nav" aria-label="Sayfa Yolu">
+                <a href="index.html">Ana Sayfa</a>
+                <span>/</span>
+                <a href="index.html#koleksiyon">Koleksiyon</a>
+                <span>/</span>
+                <a href="index.html#koleksiyon" id="breadcrumb-category">Kategori</a>
+                <span>/</span>
+                <span id="breadcrumb-product">Ürün Yükleniyor...</span>
+            </nav>
+
+            <!-- Dinamik Ürün Detay Konteyneri (main.js ile doldurulur) -->
+            <div id="product-detail-container">
+                <div style="text-align: center; padding: 80px 20px;">
+                    <p>Ürün detayları yükleniyor...</p>
+                </div>
+            </div>
+
+            <!-- İlginizi Çekebilecek Diğer Ürünler -->
+            <section class="related-products-section">
+                <h3>Koleksiyondan Diğer Seçenekler</h3>
+                <div id="related-products-grid" class="grid-container">
+                    <!-- main.js tarafından benzer veya diğer kategorideki ürünler yüklenir -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- 3. ALT BİLGİ & İLETİŞİM (Footer) -->
+    <footer id="iletisim">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="color: #FAF6EE; margin-bottom: 12px;">GKCollection</div>
+                    <p>Sevgiyle dokunan el emeği çantalar, cüzdanlar ve yaşam alanlarınıza sıcaklık katan özel aksesuarlar.</p>
+                    <p style="margin-top: 10px; font-size: 0.85rem; color: #8A9A86;">
+                        ✓ %100 El Yapımı &nbsp; | &nbsp; ✓ Kişiye Özel Üretim
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Hızlı Menü</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#ana-sayfa">Ana Sayfa</a></li>
+                        <li><a href="index.html#koleksiyon">Koleksiyon</a></li>
+                        <li><a href="index.html#hikayemiz">Hikayemiz</a></li>
+                        <li><a href="index.html#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>İletişim & Sipariş</h3>
+                    <p style="margin-bottom: 15px;">Özel sipariş talepleriniz, renk danışmanlığı ve sorularınız için bize ulaşabilirsiniz:</p>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <span>📧 E-posta:</span>
+                            <a href="mailto:merhaba@gkcollection.com">merhaba@gkcollection.com</a>
+                        </li>
+                        <li>
+                            <span>📸 Instagram:</span>
+                            <a href="https://instagram.com" target="_blank" rel="noopener">@gkcollection_</a>
+                        </li>
+                        <li>
+                            <span>💬 WhatsApp:</span>
+                            <a href="https://wa.me/" target="_blank" rel="noopener">Sipariş Hattı</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 GKCollection. Tüm hakları saklıdır.</p>
+                <p>Her ürün sevgi ve özenle elde yapılmıştır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Dosyaları -->
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
